@@ -1,0 +1,30 @@
+{
+  "workshoptitle": "OCI Generative AI Agents",
+  "help": " ",
+	"tutorials": [
+    {
+      "title": "Introdução",
+      "filename": "0-Introducao/0-intro.md"
+    },
+    {
+      "title": "Ativação da Conta Oracle Cloud",
+      "filename": "1-config/0-pt-config-lab.md"
+    },
+    {
+      "title": "Configuração das Permissões",
+      "filename": "3-policies/3-agent-policies.md"
+    },
+    {
+      "title": "Etapa 1: Provisionar Base de conhecimento e MySQL HeatWave",
+      "filename": "2-provisionar-recursos/2-provisionar-recursos.md"
+    },
+    {
+      "title": "Etapa 2: Criação e configuração do AI Agent",
+      "filename": "4-agents-generative-ai/4-agents-generative-ai.md"
+    },
+    {
+      "title": "MySQL HeatWave + AI Agent",
+      "filename": "5-mysql-heatwave/5-mysql-heatwave.md"
+    }
+  ]
+}
