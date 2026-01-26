@@ -8,8 +8,8 @@
     "help": "isabella.alvarez@oracle.com, breno.comin@oracle.com, thais.henrique@oracle.com",
     "tutorials": [
         {
-            "title": "Introduccion",
-            "description": "Bienvenido a OCI Data & AI Fast Track para analistas",
+            "title": "Introdução",
+            "description": "Seja Bem vindo ao OCI Data & AI Fast Track para analistas",
             "filename": "intro-es/intro-es.md"
         
         },
