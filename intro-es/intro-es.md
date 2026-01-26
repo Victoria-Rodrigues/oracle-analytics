@@ -1,42 +1,33 @@
-# Oracle Cloud Infrastructure Fast Track: para analistas de datos
+# Oracle Cloud Infrastructure Fast Track
 
-### Acerca de Oracle Analytics Cloud (OAC)
+### Sobre o Oracle Analytics Cloud (OAC)
 
-OAC (Oracle Analytics Cloud) es un servicio dinámico y escalable disponible en OCI. Ofrece capacidades para procesar, enriquecer y visualizar datos, crear una capa semántica y entrenar y usar modelos de Machine Learning. Todo ello de forma intuitiva y con tan solo unos clics.
+O OAC (Oracle Analytics Cloud) é um serviço dinâmico e escalável disponível no OCI. Ele oferece recursos para processar, enriquecer e visualizar dados, criar uma camada semântica e treinar e usar modelos de Machine Learning. Tudo isso de forma intuitiva e com apenas alguns cliques.
 
-Además de proporcionar toda esta funcionalidad (entre otras) en el navegador web, se puede acceder a estos datos a través de dos aplicaciones móviles: Oracle Day-by-Day y Oracle Analytics Mobile. Miles de clientes utilizan estas herramientas de toma de decisiones todos los días.
+A plataforma de Self-service Analytics, o OAC conta com um motor de Business Intelligence do OBIEE (solução muito consolidada no mercado), que permite a construção de Modelos Dimensionais, Hierarquias e outras estruturas para otimizar o consumo de dados, como Relatórios e Dashboards.
 
-Complementando la plataforma de Self-service Analytics, OAC cuenta con un motor de Business Intelligence de OBIEE (solución muy consolidada en el mercado), que permite la construcción de Modelos Dimensionales, Jerarquías y otras estructuras para optimizar el consumo de datos, como Reportes y Dashboards.
+Toda a filosofia da solução gira em torno dos conceitos de Augmented Analytics, um tema muito recorrente nas análises de empresas especializadas, como o Gartner. Trata-se de enriquecer as análises com conceitos de Inteligência Artificial e Machine Learning, dando acesso a abordagens estatísticas avançadas para qualquer perfil de usuário, não apenas aqueles com amplo conhecimento no assunto. Nossa solução é classificada como “Visionária” no Quadrante Mágico do Gartner, a referência líder para avaliar e comparar tecnologias na atualidade.
 
-Toda la filosofía de la solución gira en torno a los conceptos de Augmented Analytics, un tema muy recurrente en los análisis de empresas especializadas, como Gartner. Se trata de enriquecer los análisis con conceptos de Inteligencia Artificial y Machine Learning, dando acceso a enfoques estadísticos avanzados para cualquier perfil de usuario, no solo aquellos con amplios conocimientos en la materia. Nuestra solución está calificada como 'Visionaria' en el Cuadrante Mágico de Gartner, el punto de referencia líder para evaluar y comparar tecnologías en la actualidad.
+## Sobre este workshop
 
-## Acerca de este taller
+Neste laboratório, você será colocado em diferentes papéis para conhecer as principais funcionalidades da ferramenta sob a perspectiva de um usuário de negócios (que percorrerá a solução e gerará visualizações interativas), um usuário técnico (que criará conexões com fontes de dados e manipulará as informações para que estejam disponíveis adequadamente para outros usuários) e um usuário administrador (que gerenciará o acesso à plataforma e criará backups do ambiente). Todas as práticas são descritas detalhadamente e não exigem nenhum conhecimento prévio para sua realização.
 
-En este laboratorio, se le ubicará en diferentes roles para conocer las principales funcionalidades de la herramienta desde la perspectiva de un usuario empresarial (que recorrerá la solución y generará visualizaciones interactivas), un usuario técnico (que creará conexiones con datos fuentes y manipular la información para que esté disponible para otros usuarios adecuadamente) y un usuario administrador (que gestionará el acceso a la plataforma y creará copias de seguridad del entorno). Todas las prácticas se describen detalladamente y no requieren ningún conocimiento previo para su realización.
-
-Es importante mencionar que este Fast Track es parte de un conjunto de capacitación más amplio, que incluye Fast Track: para ingenieros de datos y Fast Track: para científicos de datos, que pronto estará disponible en LiveLabs.
-
-Las preguntas se pueden enviar al equipo que creó y editó cada uno de los laboratorios, información que está disponible al final de cada paso. El tiempo total estimado para ejecutar todo el laboratorio es de 4 horas.
-
-*Tiempo estimado del Taller:* 4 Horas
+*Tempo estimado do Workshop:* 4 horas
 
 ### Objetivos
 
-A través de esta guía, proporcionaremos laboratorios prácticos sobre:
+Por meio deste guia, forneceremos laboratórios práticos sobre:
 
-- Creación de conexión
-- Creación de conjuntos de datos
-- Preparación del conjunto de datos
-- Creación de vistas
-- Creación de visualizaciones avanzadas
-- Administración
+- Criação de conexão
+- Criação de conjuntos de dados
+- Preparação do conjunto de dados
+- Criação de visualizações
+- Criação de visualizações avançadas
+- Administração
 
-## Sepa mas
+## Saiba mais
+[Documentação do Oracle Analytics Cloud](https://docs.oracle.com/en/cloud/paas/analytics-cloud/index.html).
 
-[Documentación de Oracle Analytics Cloud](https://docs.oracle.com/en/cloud/paas/analytics-cloud/index.html).
-
-## Autoría
-
-- **Autores** - Thais Henrique, Isabela Alvarez, Breno Comin, Isabelle Dias e Guilherme Galhardo
-- **Traducción** - Eliana Romero
-- **Última actualización por/fecha** - Eliana Romero, Agosto/2023
+## Autoria
+- **Autores** - Victória Rodrigues
+- **Última atualização por/data** - Janeiro/2026
