@@ -10,8 +10,12 @@
         {
             "title": "Introdução",
             "description": "Seja Bem vindo ao OCI Data & AI Fast Track para analistas",
-            "filename": "intro-es/intro-es.md"
+            "filename": "0-intro/intro.md"
         
+        },
+        {
+        "title": "Ativação da Conta Oracle Cloud",
+        "filename": "1-config/0-pt-config-lab.md"
         },
         {
             "title": "Pre-requisitos: Aprovisionamiento de los recursos necesarios",
