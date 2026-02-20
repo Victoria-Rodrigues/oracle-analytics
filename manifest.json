@@ -20,7 +20,7 @@
         {
             "title": "Pre-requisitos: Aprovisionamiento de los recursos necesarios",
             "description": "Prepare su ambiente para iniciar el Fast Track de OAC",
-            "filename": "ft-create-autonomous-database-es-pre/ft-create-autonomous-database-es-pre.md"
+            "filename": "2-criacao-recursos/criacao-recursos.md"
         },
         {
             "title": "Lab 1: Primeros pasos en Oracle Analytics Cloud",
