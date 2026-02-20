@@ -1,165 +1,160 @@
-# Crear los recursos necesarios para el Laboratorio
+# Criar os recursos necessários para o Laboratório
 
-## Introducción
-Oracle Cloud es el proveedor de nube más amplio e integrado de la industria, con opciones de implementación que van desde la nube pública hasta su centro de datos. Oracle Cloud ofrece servicios de alta calidad en Software como Servicio (SaaS), Plataforma como Servicio (PaaS) e Infraestructura como Servicio (IaaS).
-En este laboratorio, aprenderá cómo aprovisionar una base de datos autónoma en Oracle Cloud Infrastructure.
+## Introdução
 
-***Descripción general***
+A Oracle Cloud é a provedora de nuvem mais abrangente e integrada do setor, com opções de implantação que vão desde a nuvem pública até o seu data center. A Oracle Cloud oferece serviços de alta qualidade em Software como Serviço (SaaS), Plataforma como Serviço (PaaS) e Infraestrutura como Serviço (IaaS).
+Neste laboratório, você aprenderá como provisionar um banco de dados Autonomous na Oracle Cloud Infrastructure.
 
-Oracle Cloud Infrastructure Autonomous Database es un entorno de base de datos totalmente administrado y preconfigurado con tres tipos de cargas de trabajo disponibles, procesamiento de transacciones autónomo, almacén de datos autónomo y JSON autónomo. No necesita configurar ni administrar ningún hardware ni instalar ningún software. Después del aprovisionamiento, puede escalar la cantidad de núcleos de CPU o la capacidad de almacenamiento de la base de datos en cualquier momento, sin afectar la disponibilidad o el rendimiento. La base de datos autónoma se encarga de la creación de la base de datos, así como de las siguientes tareas de mantenimiento:
-* Copia de seguridad de la base de datos
-* Parcheo de base de datos
-* Actualización de base de datos
-* Ajuste de base de datos
+***Visão geral***
 
-*Tiempo estimado de laboratorio:* 25 minutos
+A Oracle Cloud Infrastructure Autonomous Database é um ambiente de banco de dados totalmente gerenciado e pré-configurado, com três tipos de cargas de trabalho disponíveis: processamento de transações autônomo, data warehouse autônomo e JSON autônomo. Não é necessário configurar ou gerenciar nenhum hardware, nem instalar software. Após o provisionamento, você pode escalar a quantidade de núcleos de CPU ou a capacidade de armazenamento do banco de dados a qualquer momento, sem impactar a disponibilidade ou o desempenho. O banco de dados Autonomous cuida da criação do banco, bem como das seguintes tarefas de manutenção:
+
+* Backup do banco de dados
+* Aplicação de patches no banco de dados
+* Atualização do banco de dados
+* Ajuste do banco de dados
+
+*Tempo estimado do laboratório:* 25 minutos
 
 ### Objetivos
 
-En este laboratorio usted:
-* Aprenda a iniciar sesión en su cuenta de Oracle Cloud
-* Aprovisionar un almacén de datos autónomo de Oracle
-* Aprovisionar una nube de Oracle Analytics
+Neste laboratório você irá:
 
+* Aprender a acessar sua conta Oracle Cloud
+* Provisionar um Autonomous Data Warehouse da Oracle
+* Provisionar uma instância Oracle Analytics Cloud
 
-## Tarea 1: Iniciar sesión en Oracle Cloud
+## Tarefa 1: Faça login na Oracle Cloud
 
-1. Abra su navegador web y vaya a [Oracle Cloud](https://cloud.oracle.com).
-Ingrese el nombre de su cuenta en la nube si inicia sesión en una cuenta con Identity Cloud Service.
+1. Abra seu navegador web e acesse [Oracle Cloud](https://cloud.oracle.com).
 
-![Accediendo a la nube](./images/acesso_a_cloud.png)
+Insira o nome da sua conta na nuvem se for acessar uma conta com Identity Cloud Service.
 
-Cuando cargue la nueva página, simplemente haga clic en **Continuar**.
+![Acessando a nuvem](./images/acesso_a_cloud.png)
 
-![Iniciar sesión en la consola OCI](./images/login_oci.png)
+Quando a nova página carregar, basta clicar em **Continuar**.
 
-2. En la página de inicio de sesión de **Cloud Infrastructure**, ingrese sus credenciales de inicio de sesión y luego haga clic en **Iniciar sesión**.
+![Fazendo login no OCI](./images/login_oci.png)
 
-![Accediendo a la nube](./images/tela_login.png)
+2. Na página de login da **Cloud Infrastructure**, insira suas credenciais de acesso e clique em **Entrar**.
 
-3. ¡Ahora está conectado a Oracle Cloud!
+![Acessando a nuvem](./images/tela_login.png)
 
-![Página de inicio de la consola OCI](https://oracle-livelabs.github.io/common/images/console/home-page.png " ")
+3. Pronto! Agora você está conectado à Oracle Cloud!
 
-## Tarea 2: Proceso de creación de la base de datos autónoma
+![Página inicial do console OCI](https://oracle-livelabs.github.io/common/images/console/home-page.png " ")
 
-Para iniciar el proceso de creación de la Base de Datos Autónoma:
+## Tarefa 2: Processo de criação do banco de dados Autonomous
 
-1. Haga clic en el menú en el lado izquierdo de la pantalla principal, seleccione Base de datos Oracle, luego "Base de datos autónoma"
+Para iniciar o processo de criação do Banco de Dados Autonomous:
 
-![Menú Base de datos autónoma](./images/autonomous-database-menu-1.png)
+1. Clique no menu no lado esquerdo da tela principal, selecione Banco de Dados Oracle, depois "Banco de Dados Autonomous"
 
-2. Haga clic en "Crear una base de datos autónoma" y será redirigido para crear una base de datos autónoma.
+![Menu banco de dados Autonomous](./images/autonomous-database-menu-1.png)
 
-![haga clic en "Crear base de datos autónoma"](./images/autonomous-database-create-2.png)
+2. Clique em "Criar um banco de dados Autonomous" e você será direcionado para a criação do banco.
 
-3. Complete los campos requeridos para crear su Base de datos autónoma como se muestra a continuación:
+![clique em "Criar banco de dados Autonomous"](./images/autonomous-database-create-2.png)
 
-![completar los campos de la base de datos autónoma](./images/autonomous-database-type-3.png)
+3. Complete os campos necessários para criar seu Banco de Dados Autonomous conforme mostrado abaixo:
 
-* Nombre para mostrar: **Elija un nombre para mostrar para su banco**
-* Nombre de la base de datos: **Elija un nombre de base de datos para su base de datos**
-* Elija un tipo de carga de trabajo: para este taller, seleccione **Almacén de datos**
-* Elija un tipo de implementación: **Infraestructura compartida**
+![completar os campos do banco de dados Autonomous](./images/autonomous-database-type-3.png)
 
-![configurar la base de datos autónoma](./images/autonomous-database-config-4.png)
+* Nome de exibição: **Escolha um nome de exibição para seu banco**
+* Nome do banco de dados: **Escolha um nome para o banco de dados**
+* Escolha o tipo de carga de trabalho: para este laboratório, selecione **Data Warehouse**
+* Escolha o tipo de infraestrutura: **Infraestrutura compartilhada**
 
-* Elija la versión de la base de datos: **19c**
-* Recuento de OCPU: **1**
-* Almacenamiento (TB): **1**
+![configurar o banco de dados Autonomous](./images/autonomous-database-config-4.png)
 
-![configurar credenciales y tipo de acceso](./images/autonomous-database-credentials-5.png)
+* Selecione a versão do banco de dados: **19c**
+* Quantidade de OCPU: **1**
+* Armazenamento (TB): **1**
 
-* Crear credenciales de administrador: **Crear una contraseña para el usuario ADMIN**
-* Elija el acceso a la red: **Acceso seguro desde cualquier lugar**
+![configurar credenciais e tipo de acesso](./images/autonomous-database-credentials-5.png)
 
+* Criar credenciais de administrador: **Crie uma senha para o usuário ADMIN**
+* Escolha o acesso à rede: **Acesso seguro de qualquer lugar**
 
-![elija la licencia y haga clic en "Crear base de datos autónoma"](./images/autonomous-database-license-6.png)
+![escolha a licença e clique em "Criar banco de dados Autonomous"](./images/autonomous-database-license-6.png)
 
-* Elija la licencia y la edición de la base de datos de Oracle: **Licencia incluida**
-* Ahora finalice la creación haciendo clic en el botón **"Crear base de datos autónoma"**
+* Escolha a licença e edição do banco de dados Oracle: **Licença incluída**
+* Agora finalize a criação clicando no botão **"Criar banco de dados Autonomous"**
 
-*¡Su base de datos autónoma se ha aprovisionado con éxito!*
+*Seu banco de dados Autonomous foi provisionado com sucesso!*
 
-## Tarea 3: Proceso de creación de Oracle Analytics Cloud
+## Tarefa 3: Processo de criação do Oracle Analytics Cloud
 
-En este tutorial, crearemos una instancia de la herramienta Oracle Analytics Cloud.
+Neste tutorial, criaremos uma instância da ferramenta Oracle Analytics Cloud.
 
-1. Crear el OAC
+1. Criar a OAC
 
-![ver base de datos disponible](./images/analytics_menu.png)
+![ver banco de dados disponível](./images/analytics_menu.png)
 
-- Haga clic en el Menú Hamburguesa en la parte superior izquierda;
-- Haga clic en **Análisis e IA**;
-- Haga clic en **Analytics Cloud**.
+- Clique no menu hamburguer no canto superior esquerdo;
+- Clique em **Análise e IA**;
+- Clique em **Analytics Cloud**.
 
-![ver base de datos disponible](./images/analytics_create_instance.png)
+![ver banco de dados disponível](./images/analytics_create_instance.png)
 
+- Verifique se está no compartimento correto;
+- Clique em **Criar instância**.
 
-- Comprobar si está en el compartimento correcto;
-- Haga clic en **Crear instancia**.
+![ver banco de dados disponível](./images/analytics_creation.png)
 
-![ver base de datos disponible](./images/analytics_creation.png)
+2. Complete as informações:
 
-2. Complete la información:
+* Nome: nome dado à instância;
+* Descrição: descrição dada à instância – opcional;
+* Criar no Compartimento: Compartimento onde a instância será criada;
+* Conjunto de recursos: escolha **Edição Profissional**;
+* Capacidade: escolha **OCPU** e digite **1**;
+* Tipo de licença: Escolha **Licença incluída**;
+- Clique em **Criar**.
 
-* Nombre: nombre dado a la instancia;
-* Descripción: descripción dada a la instancia – opcional;
-* Crear en Compartimento: Compartimento donde se creará la instancia;
-* Conjunto de funciones: elija **Edición profesional**;
-* Capacidad: elija **OCPU** y escriba **1**;
-* Tipo de licencia: Elija **Licencia incluida**;
+3. Acesse o Oracle Analytics Cloud
 
-- Haz clic en **Crear** .
+Neste passo mostraremos como acessar a instância do Oracle Analytics Cloud.
 
-3. Acceda a Oracle Analytics Cloud
+- Clique no nome da instância criada "Nome escolhido";
 
-En este paso mostraremos como accedemos a la instancia de Oracle Analytics Cloud.
-- Haga clic en el nombre de la instancia creada "Nombre elegido";
-![ver base de datos disponible](./images/instance_oac.png)
+![ver banco de dados disponível](./images/instance_oac.png)
 
-- Haga clic en **Página de inicio de Analytics**.
-![ver base de datos disponible](./images/analytics_access.png)
+- Clique em **Página inicial do Analytics**.
 
-## Tarea 4: Carga de datos de laboratorio en Autonomous
+![ver banco de dados disponível](./images/analytics_access.png)
 
-Para el desarrollo del laboratorio es necesario descargar los 2 archivos haciendo click aqui. 
+## Tarefa 4: Carregamento dos dados do laboratório no Autonomous
 
-(Pedidos [aquí](https://objectstorage.us-ashburn-1.oraclecloud.com/p/U8tA6PQvsaL8jSlP9NlWMnkzWsQ29-bs8q6rEjwo0cY_-7w0nd9DOqWf94fsok4g/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Pedidos.xlsx))
+Para o desenvolvimento do laboratório é necessário baixar os 2 arquivos clicando aqui.
+(Pedidos [aqui](https://objectstorage.us-ashburn-1.oraclecloud.com/p/U8tA6PQvsaL8jSlP9NlWMnkzWsQ29-bs8q6rEjwo0cY_-7w0nd9DOqWf94fsok4g/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Pedidos.xlsx))
 
-(Ventas [aquí](https://objectstorage.us-ashburn-1.oraclecloud.com/p/n_Jkw7RfTdkvE45pVR9bS2FT2_spcZnmZwOZWE0gIa2VgBvjHjM22k1YIlfpnRTZ/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Ventas.xlsx))
+(Vendas [aqui](https://objectstorage.us-ashburn-1.oraclecloud.com/p/n_Jkw7RfTdkvE45pVR9bS2FT2_spcZnmZwOZWE0gIa2VgBvjHjM22k1YIlfpnRTZ/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Ventas.xlsx))
 
+1. Acesse seu Banco de Dados Autonomous e clique no botão **Database actions**.
+![ver banco de dados disponível](./images/data_load.png)
 
-1. Accede a tu Base de Datos Autónoma y haz clic en el botón **Database actions**.
-![ver base de datos disponible](./images/data_load.png)
+2. Selecione as opções **Load Data** e **Local File**, clique em continuar.
+![ver banco de dados disponível](./images/select_load.png)
 
-2. Seleccionar las opciones de **Load Data** y **Local File**, dar click en continuar.
+3. Clique em **Select Files** e selecione os arquivos baixados anteriormente.
+![ver banco de dados disponível](./images/select_files.png)
 
-![ver base de datos disponible](./images/select_load.png)
+4. Para finalizar o processo de upload, clique em **start**.
+![ver banco de dados disponível](./images/start.png)
 
-3. Dar click en **Select Files** y seleccionar los archivos descargados anteriormente.
+5. Confirme o upload clicando em **run**.
+![ver banco de dados disponível](./images/run.png)
 
-![ver base de datos disponible](./images/select_files.png)
+6. Os arquivos já estarão disponíveis no banco de dados Autonomous.
+![ver banco de dados disponível](./images/done.png)
 
-4. Para finalizar el proceso de carga, debe dar click en **start**.
+## Conclusão
 
-![ver base de datos disponible](./images/start.png)
+Nesta sessão, você provisionou o Oracle Autonomous Data Warehouse e o Oracle Analytics Cloud, que serão utilizados ao longo do laboratório. Os dados também foram carregados para alimentar as tabelas no banco de dados.
 
-5. Confirmar la carga dando click en **run**.
+## Autoria
 
-![ver base de datos disponible](./images/run.png)
-
-6. Los archivos se encuentran en la base de datos autonoma.
-
-![ver base de datos disponible](./images/done.png)
-
-
-
-## Conclusión
-
-En esta sesión, ha aprovisionado Oracle Autonomous Data Warehouse y Oracle Analytics Cloud, que se utilizarán en todo el laboratorio. También se cargaron los datos para llenar las tablas en la base de datos.
-
-## Autoría
 - **Autores** - Thais Henrique, Isabela Alvarez, Breno Comin, Isabelle Dias e Guilherme Galhardo
-- **Traducción** - Eliana Romero
-- **Última actualización por/fecha** - Eliana Romero, Agosto/2023
+- **Tradução** - Eliana Romero
+- **Última atualização por/data** - Eliana Romero, Agosto/2023
