@@ -18,7 +18,7 @@
         "filename": "1-config/0-pt-config-lab.md"
         },
         {
-            "title": "Pre-requisitos: Aprovisionamiento de los recursos necesarios",
+            "title": "Pre-requisitos: Provisionamento de Recursos",
             "description": "Prepare su ambiente para iniciar el Fast Track de OAC",
             "filename": "2-criacao-recursos/criacao-recursos.md"
         },
