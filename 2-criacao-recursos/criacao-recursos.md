@@ -48,11 +48,11 @@ Quando a nova página carregar, basta clicar em **Continuar**.
 
 Para iniciar o processo de criação do Banco de Dados Autonomous:
 
-1. Clique no menu no lado esquerdo da tela principal, selecione Banco de Dados Oracle, depois "Banco de Dados Autonomous"
+1. Clique no menu no lado esquerdo da tela principal, selecione **Oracle AI Database**, depois **Autonomous AI Database**
 
 ![Menu banco de dados Autonomous](./images/autonomous-database-menu-1.png)
 
-2. Clique em "Criar um banco de dados Autonomous" e você será direcionado para a criação do banco.
+2. Clique em **Create Autonomous AI Database** e você será direcionado para a criação do banco.
 
 ![clique em "Criar banco de dados Autonomous"](./images/autonomous-database-create-2.png)
 
@@ -60,26 +60,29 @@ Para iniciar o processo de criação do Banco de Dados Autonomous:
 
 ![completar os campos do banco de dados Autonomous](./images/autonomous-database-type-3.png)
 
-* Nome de exibição: **Escolha um nome de exibição para seu banco**
-* Nome do banco de dados: **Escolha um nome para o banco de dados**
-* Escolha o tipo de carga de trabalho: para este laboratório, selecione **Data Warehouse**
-* Escolha o tipo de infraestrutura: **Infraestrutura compartilhada**
+* Nome de exibição: **Escolha um nome de exibição para seu banco**. Sugestão: AUTWORKSHOP
+* Nome do banco de dados: **Escolha um nome para o banco de dados**. Sugestão: AUTWORKSHOP
+* Escolha o workload type: **Lakehouse**
 
 ![configurar o banco de dados Autonomous](./images/autonomous-database-config-4.png)
 
-* Selecione a versão do banco de dados: **19c**
-* Quantidade de OCPU: **1**
-* Armazenamento (TB): **1**
+![configurar o banco de dados Autonomous](./images/autonomous-database-config-4-1.png)
+
+
+* Selecione a versão do banco de dados: **26ai**
+* Quantidade de ECPU: **2**
+* Compute Auto Scaling: **Desativado**
+* Storage: **1** TB
 
 ![configurar credenciais e tipo de acesso](./images/autonomous-database-credentials-5.png)
 
-* Criar credenciais de administrador: **Crie uma senha para o usuário ADMIN**
-* Escolha o acesso à rede: **Acesso seguro de qualquer lugar**
+* Criar credenciais de administrador: **Crie uma senha para o usuário ADMIN**. Senha recomendada: **WORKSHOPsec2026##**
 
-![escolha a licença e clique em "Criar banco de dados Autonomous"](./images/autonomous-database-license-6.png)
+![Rede de acesso](./images/autonomous-database-credentials-5-1.png)
 
-* Escolha a licença e edição do banco de dados Oracle: **Licença incluída**
-* Agora finalize a criação clicando no botão **"Criar banco de dados Autonomous"**
+* Escolha o acesso à rede: **Secure acess from everywhere**
+
+* Agora finalize a criação clicando no botão **Create**
 
 *Seu banco de dados Autonomous foi provisionado com sucesso!*
 
