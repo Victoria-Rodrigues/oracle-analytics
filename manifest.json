@@ -19,8 +19,11 @@
         },
         {
             "title": "Pre-requisitos: Provisionamento de Recursos",
-            "description": "Prepare su ambiente para iniciar el Fast Track de OAC",
             "filename": "2-criacao-recursos/criacao-recursos.md"
+        },
+        {
+            "title": "Ingestão de Dados",
+            "filename": "3-ingestion-dados/ingestion-dados.md"
         },
         {
             "title": "Lab 1: Primeros pasos en Oracle Analytics Cloud",
