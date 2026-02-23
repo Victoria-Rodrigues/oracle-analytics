@@ -48,7 +48,7 @@ Quando a nova página carregar, basta clicar em **Continuar**.
 
 Para iniciar o processo de criação do Banco de Dados Autonomous:
 
-1. Clique no menu no lado esquerdo da tela principal, selecione **Oracle AI Database**, depois **Autonomous AI Database**
+1. Clique no menu (☰) e selecione **Oracle AI Database ⮕ Autonomous AI Database**
 
 ![Menu banco de dados Autonomous](./images/autonomous-database-menu-1.png)
 
@@ -90,30 +90,37 @@ Para iniciar o processo de criação do Banco de Dados Autonomous:
 
 Neste tutorial, criaremos uma instância da ferramenta Oracle Analytics Cloud.
 
-1. Criar a OAC
+1. Clique no menu (☰) e selecione **Analytics & AI ⮕ Analytics Cloud**
 
-![ver banco de dados disponível](./images/analytics_menu.png)
+![Menu OAC](./images/analytics_menu.png)
 
-- Clique no menu hamburguer no canto superior esquerdo;
-- Clique em **Análise e IA**;
-- Clique em **Analytics Cloud**.
+Clique em **Create instance**:
 
-![ver banco de dados disponível](./images/analytics_create_instance.png)
-
-- Verifique se está no compartimento correto;
-- Clique em **Criar instância**.
-
-![ver banco de dados disponível](./images/analytics_creation.png)
+![Create OAC](./images/analytics_create_instance.png)
 
 2. Complete as informações:
 
-* Nome: nome dado à instância;
+* Nome: nome dado à instância. Sugestão: **OACWORKSHOP**
 * Descrição: descrição dada à instância – opcional;
-* Criar no Compartimento: Compartimento onde a instância será criada;
-* Conjunto de recursos: escolha **Edição Profissional**;
-* Capacidade: escolha **OCPU** e digite **1**;
-* Tipo de licença: Escolha **Licença incluída**;
-- Clique em **Criar**.
+* Selecione o Compartment com nome de <NomeTenancy>(root)
+
+![OAC](./images/analytics_creation.png)
+
+* Capacity type: escolha **OCPU** e digite **1**;
+
+![Capacity](./images/analytics_creation-1.png)
+
+* License: escolha **Licença incluída**;
+* Edition: escolha **Edição Profissional**;
+
+![Licença e Edição](./images/analytics_creation-2.png)
+
+* Software updates: **Regular**
+
+![Software updates](./images/analytics_creation-3.png)
+
+* Agora finalize a criação clicando no botão **Create**
+
 
 3. Acesse o Oracle Analytics Cloud
 
