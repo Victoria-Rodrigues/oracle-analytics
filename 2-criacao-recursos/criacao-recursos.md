@@ -60,7 +60,7 @@ Para iniciar o processo de criação do Banco de Dados Autonomous:
 
 * Nome de exibição: **Escolha um nome de exibição para seu banco**. Sugestão: AUTWORKSHOP
 * Nome do banco de dados: **Escolha um nome para o banco de dados**. Sugestão: AUTWORKSHOP
-* Selecione o Compartment com nome de <NomeTenancy>(root)
+* Selecione o Compartment com nome de **NomeTenancy (root)**
 
 ![completar os campos do banco de dados Autonomous](./images/autonomous-database-type-3.png)
 
@@ -79,11 +79,11 @@ Para iniciar o processo de criação do Banco de Dados Autonomous:
 
 ![configurar o banco de dados Autonomous](./images/autonomous-database-config-4-1.png)
 
-* Criar credenciais de administrador: **Crie uma senha para o usuário ADMIN**. Senha recomendada: **WORKSHOPsec2026##**
+* Criar credenciais do administrador: **Crie uma senha para o usuário ADMIN**. Senha recomendada: **WORKSHOPsec2026##**
 
 ![configurar credenciais e tipo de acesso](./images/autonomous-database-credentials-5.png)
 
-* Escolha o acesso à rede: **Secure acess from everywhere**
+* Escolha o acesso à rede: **Secure access from everywhere**
 
 ![Rede de acesso](./images/autonomous-database-credentials-5-1.png)
 
@@ -107,17 +107,17 @@ Clique em **Create instance**:
 2. Complete as informações:
 
 * Nome: nome dado à instância. Sugestão: **OACWORKSHOP**
-* Descrição: descrição dada à instância – opcional;
-* Selecione o Compartment com nome de <NomeTenancy>(root)
+* Descrição: descrição dada à instância – **opcional**;
+* Selecione o Compartment com nome de **NomeTenancy (root)**
 
 ![OAC](./images/analytics_creation.png)
 
-* Capacity type: escolha **OCPU** e digite **1**;
+* Capacity type: escolha **OCPU** e quantidade OCPU **1**;
 
 ![Capacity](./images/analytics_creation-1.png)
 
-* License: escolha **Licença incluída**;
-* Edition: escolha **Edição Profissional**;
+* License: escolha **License included**;=;
+* Edition: escolha **Enterprise edition**;
 
 ![Licença e Edição](./images/analytics_creation-2.png)
 
@@ -127,50 +127,13 @@ Clique em **Create instance**:
 
 * Agora finalize a criação clicando no botão **Create**
 
-
-3. Acesse o Oracle Analytics Cloud
-
-Neste passo mostraremos como acessar a instância do Oracle Analytics Cloud.
-
-- Clique no nome da instância criada "Nome escolhido";
-
-![ver banco de dados disponível](./images/instance_oac.png)
-
-- Clique em **Página inicial do Analytics**.
-
-![ver banco de dados disponível](./images/analytics_access.png)
-
-## Tarefa 4: Carregamento dos dados do laboratório no Autonomous
-
-Para o desenvolvimento do laboratório é necessário baixar os 2 arquivos clicando aqui.
-(Pedidos [aqui](https://objectstorage.us-ashburn-1.oraclecloud.com/p/U8tA6PQvsaL8jSlP9NlWMnkzWsQ29-bs8q6rEjwo0cY_-7w0nd9DOqWf94fsok4g/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Pedidos.xlsx))
-
-(Vendas [aqui](https://objectstorage.us-ashburn-1.oraclecloud.com/p/n_Jkw7RfTdkvE45pVR9bS2FT2_spcZnmZwOZWE0gIa2VgBvjHjM22k1YIlfpnRTZ/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Ventas.xlsx))
-
-1. Acesse seu Banco de Dados Autonomous e clique no botão **Database actions**.
-![ver banco de dados disponível](./images/data_load.png)
-
-2. Selecione as opções **Load Data** e **Local File**, clique em continuar.
-![ver banco de dados disponível](./images/select_load.png)
-
-3. Clique em **Select Files** e selecione os arquivos baixados anteriormente.
-![ver banco de dados disponível](./images/select_files.png)
-
-4. Para finalizar o processo de upload, clique em **start**.
-![ver banco de dados disponível](./images/start.png)
-
-5. Confirme o upload clicando em **run**.
-![ver banco de dados disponível](./images/run.png)
-
-6. Os arquivos já estarão disponíveis no banco de dados Autonomous.
-![ver banco de dados disponível](./images/done.png)
+*Seu Oracle Analytics Cloud foi provisionado com sucesso!*
 
 ## Conclusão
 
-Nesta sessão, você provisionou o Oracle Autonomous Data Warehouse e o Oracle Analytics Cloud, que serão utilizados ao longo do laboratório. Os dados também foram carregados para alimentar as tabelas no banco de dados.
+Nesta sessão, você provisionou o Oracle Autonomous AI Database e o Oracle Analytics Cloud, que serão utilizados ao longo do laboratório.
 
 ## Autoria
 
-- **Autores** - Thais Henrique, Isabela Alvarez, Breno Comin, Isabelle Dias e Guilherme Galhardo
-- **Tradução** - Eliana Romero
-- **Última atualização por/data** - Eliana Romero, Agosto/2023
+- **Autores** - Victória Rodrigues
+- **Última atualização por/data** - Fevereiro/2026
