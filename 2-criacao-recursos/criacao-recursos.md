@@ -58,29 +58,35 @@ Para iniciar o processo de criação do Banco de Dados Autonomous:
 
 3. Complete os campos necessários para criar seu Banco de Dados Autonomous conforme mostrado abaixo:
 
-![completar os campos do banco de dados Autonomous](./images/autonomous-database-type-3.png)
-
 * Nome de exibição: **Escolha um nome de exibição para seu banco**. Sugestão: AUTWORKSHOP
 * Nome do banco de dados: **Escolha um nome para o banco de dados**. Sugestão: AUTWORKSHOP
+* Selecione o Compartment com nome de <NomeTenancy>(root)
+
+![completar os campos do banco de dados Autonomous](./images/autonomous-database-type-3.png)
+
+
 * Escolha o workload type: **Lakehouse**
 
-![configurar o banco de dados Autonomous](./images/autonomous-database-config-4.png)
-
-![configurar o banco de dados Autonomous](./images/autonomous-database-config-4-1.png)
-
+![alt text](./images/autonomous-database-workloadtype.png)
 
 * Selecione a versão do banco de dados: **26ai**
 * Quantidade de ECPU: **2**
 * Compute Auto Scaling: **Desativado**
+
+![configurar o banco de dados Autonomous](./images/autonomous-database-config-4.png)
+
 * Storage: **1** TB
 
-![configurar credenciais e tipo de acesso](./images/autonomous-database-credentials-5.png)
+![configurar o banco de dados Autonomous](./images/autonomous-database-config-4-1.png)
 
 * Criar credenciais de administrador: **Crie uma senha para o usuário ADMIN**. Senha recomendada: **WORKSHOPsec2026##**
 
-![Rede de acesso](./images/autonomous-database-credentials-5-1.png)
+![configurar credenciais e tipo de acesso](./images/autonomous-database-credentials-5.png)
 
 * Escolha o acesso à rede: **Secure acess from everywhere**
+
+![Rede de acesso](./images/autonomous-database-credentials-5-1.png)
+
 
 * Agora finalize a criação clicando no botão **Create**
 
