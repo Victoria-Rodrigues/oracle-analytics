@@ -1,70 +1,78 @@
-# Preparar un conjunto de datos
+#  Preparar um Conjunto de dados
 
-## Introducción
+## Introdução
 
-Después de conectarse a la base de datos y seleccionar las tablas, en este laboratorio aprenderá cómo preparar su conjunto de datos en Oracle Analytics Cloud, trayendo datos externos, enriqueciendo el análisis y realizando transformaciones preliminares para crear gráficos y visualizaciones.
+Após a conexão com o banco e seleção das tabelas, neste lab você vai aprender a preparar seu Conjunto de Dados (Dataset) no Oracle Analytics Cloud, trazendo dados externos, enriquecendo a análise e realizando transformações preliminares à criação dos gráficos e visualizações
 
 
-*Tiempo estimado para el Laboratorio:* 45 Minutos
+
+*Tempo estimado para o Lab:* 45 Minutos
 
 ### Objetivos
-* Complementar los datos con archivos externos
-* Configurar geolocalizaciones en datos
-* Ajustar columnas para nuestros análisis
-* Crear nuevos campos a partir de cálculos
 
-## Tarea 1: Traer un archivo .xlsx externo
+* Complementar os dados com arquivos externos
+* Configurar localizações geográficas nos dados
+* Ajustar colunas para nossas análises
+* Criar novos campos a partir de cálculos
 
-1. Descargue el archivo de Excel requerido para este laboratorio desde [este enlace](https://objectstorage.us-ashburn-1.oraclecloud.com/p/FJncZNPkxolcQm8cSIBG3_BAK_XkDnnGBS3ok7ifwDUPBtbYn7C4BTtyu_JpptuW/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Tabla_Clientes.xlsx)
+## Tarefa 1: Trazer um arquivo .xlsx externo
 
-2. Abra el conjunto de datos **DATA_EMPRESA**, que acaba de crear. Se puede encontrar en la página de inicio de Analytics, como se muestra en la imagen a continuación.
+1. Faça o download do arquivo excel necessário para esse laboratório através [Download](https://objectstorage.us-ashburn-1.oraclecloud.com/p/FJncZNPkxolcQm8cSIBG3_BAK_XkDnnGBS3ok7ifwDUPBtbYn7C4BTtyu_JpptuW/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Tabla_Clientes.xlsx)
 
-![Análisis de la página de inicio](./images/homepage.png)
 
-3. Una vez en el lienzo de creación de la visualización, haga clic en el botón **'+'** (que se encuentra en el lado derecho de la pantalla, junto a las fuentes de datos) y seleccione **Agregar datos...**
+2. Clique no botão **Create** na parte superior direita e em seguida selecione **Dataset**.
 
-![Agregar datos](./images/add-data.png)
+![Botón Crear y luego Conexión](./images/select_dataset_labdos.png)
 
-3. Haga clic en **Crear conjunto de datos**. Tenga en cuenta que al hacerlo se creará una nueva pestaña en su navegador. Realizaremos los pasos 4 a 7 en él y luego volveremos a la pestaña original en la que estábamos trabajando.
-
-![Crear conjunto de datos](./images/create-set.png)
-
-4. Arrastre el archivo **Tabla de Clientes.xlsx** a la ventana que se abrió o haga clic en el icono indicado e indique la ubicación del archivo en su computadora.
+3. Selecione a icone de seta pra cima para fazer upload do arquivo  **Clientes.xlsx**.
 
 ![Arrastrar archivo de Excel](./images/excel-file.png)
 
-5. Analytics cargará y procesará su archivo, brindando una vista previa de qué columnas están presentes en él. En este paso no es necesario realizar ningún cambio. Haga clic en Aceptar**.
+5. O Analytics carregará e processará seu arquivo, trazendo um preview de quais as colunas presentes nele. Neste passo não é necessário realizar alterações. Clique em **OK**.
+
+![Guardar progreso](./images/load-excel.png)
+
+6. **Salve** seu progresso através do ícone do disquete e dê um nome para seu novo conjunto de dados e salve na pasta **Projetos**.
+
+![Salva disquete](./images/save-file.png)
+
+![Renombrar archivo](./images/save-file-1.png)
+
+7. Após salva o novo dataset retorne a pagina inicial do OAC e abra o conjunto de dados **DATASET_WORKSHOP**. Ele pode ser encontrado em **Menu ⮕  Data ⮕  Datasets**.
+
+![Comprueba tu conjunto de datos en la lista](./images/check_connection_adweli_labdos.png)
+
+8. Clique no botão '+' (que está localizado no lado direito da tela, próximo às fontes de dados), e selecione **Add Data...**
+
+![Agregar datos](./images/add_data.png)
+
+9. Selecione o dataset **DATASET_CLIENTE** e clique em **Add to workbook**:
+
+![Agregar datos](./images/add_data1.png)
+
+10. Agora já temos os dados do excel disponíveis em nosso projeto, mas a barra horizontal entre os conjuntos de dados indica que não há nenhuma junção entre os dados do banco e os do excel, o que nos impede de cruzá-los. 
+
+![Agregar datos](./images/oac-dois-dataset.png)
 
 
-6. **Guarde** su progreso a través del icono del disquete y **nombre** su nuevo conjunto de datos.
-![Guardar progreso](./images/rename-file.png)
-![Renombrar archivo](./images/save-file.png)
+12. Para resolver isso, navegue até a aba **Data**. Leve o seu mouse até a região entre as duas fontes de dados e você verá uma linha tracejada conectando os dois, com o valor 0. Clique nessa conexão.
 
-7. Asegúrese de guardar el nuevo conjunto de datos y **cierre la pestaña en la que estamos trabajando** (que se creó en el paso 3). Regrese a la pestaña anterior y verá que el conjunto de datos recién creado ya está en evidencia. Selecciónelo y haga clic en **Agregar al libro de trabajo**
+![Agregar datos](./images/oac-dois-dataset-2.png)
 
-![Agregar a la carpeta de trabajo](./images/add-folder.png)
 
-8. Ahora tenemos los datos de Excel disponibles en nuestro proyecto, pero la barra horizontal entre los conjuntos de datos indica que no hay unión entre la base de datos y los datos de Excel, lo que nos impide cruzarlos. Para resolver esto, vaya a la pestaña **Datos**.
+10. Selecione  **Add Another Match** (Adicionar Outra Correspondência).
 
-![Cambiar pestaña de datos](./images/data-tab.png)
+![Añadir Correo](./images/correspondencia.png)
 
-9. Mueva el mouse sobre la región entre las dos fuentes de datos y verá una línea discontinua que conecta las dos, con el valor 0. **Haga clic en esta conexión**.
-
-![Conexión 2 Datasets](./images/clique-conexao.png)
-
-10. Seleccione **Agregar otra coincidencia**.
-
-![Añadir Correo](./images/añadir-correspondencia.png)
-
-11. Relacionar los dos archivos usando la clave común entre ellos (Client ID & CLIENT ID). Después de hacerlo, haga clic en el botón **Aceptar**.
+11. Relacione os dois arquivos através da chave comum entre eles (**ID Cliente** & **ID_CLIENTE**). Após fazê-lo, clique no botão **OK**.
 
 ![Únete por ID](./images/join-cliente.png)
 
-12. Ahora debería ver que el número 1 ha aparecido entre las bases. Esto indica que se unen mediante un Join que tiene en cuenta una columna en cada base.
+12. Você deverá ver que agora o numeral 1 surgiu entre as bases. Isso indica que elas estão unidas através de um Join que leva em consideração uma coluna em cada base.
 
 ![Unirse Realizado](./images/join-realized.png)
 
-13. Vuelve a la pestaña **Ver** y valida que la barra horizontal entre conjuntos de datos haya desaparecido. Si es así, entonces esta tarea está lista. No olvides guardar tu proyecto para no perder tu progreso.
+13. Volte para a aba **Visualize** e valide se a barra horizontal entre os conjuntos de dados desapareceu. Se isso aconteceu, essa tarefa está pronta. Não se esqueça de salvar o seu projeto para não perder o seu progresso.
 
 ![Cambiar pestaña de vista](./images/tab-visualize.png)
 
