@@ -14,7 +14,7 @@ A Oracle Cloud Infrastructure Autonomous Database é um ambiente de banco de dad
 * Atualização do banco de dados
 * Ajuste do banco de dados
 
-*Tempo estimado do laboratório:* 25 minutos
+*Tempo estimado do laboratório:* 30 minutos
 
 ### Objetivos
 
@@ -129,9 +129,76 @@ Clique em **Create instance**:
 
 *Seu Oracle Analytics Cloud está sendo provisionado com sucesso!*
 
+
+## Tarefa 4: Carregando os dados do laboratório no Autonomous
+
+1. Para o desenvolvimento do laboratório é necessário baixar os 2 arquivos.
+
+* (Pedidos [Download-Pedidos](https://objectstorage.us-ashburn-1.oraclecloud.com/p/U8tA6PQvsaL8jSlP9NlWMnkzWsQ29-bs8q6rEjwo0cY_-7w0nd9DOqWf94fsok4g/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Pedidos.xlsx))
+
+* (Vendas [Download-Vendas](https://objectstorage.us-ashburn-1.oraclecloud.com/p/n_Jkw7RfTdkvE45pVR9bS2FT2_spcZnmZwOZWE0gIa2VgBvjHjM22k1YIlfpnRTZ/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Ventas.xlsx))
+
+1. Acesse o banco de dados, clique no menu (☰) e selecione **Oracle AI Database ⮕ Autonomous AI Database**
+
+![Menu banco de dados Autonomous](./images/autonomous-database-menu-1.png)
+
+Clique em cima do nome do banco de dados definido anteriormente:
+
+![Acessando database](./images/acess-database.png)
+
+2. Clique no botão **Database actions ⮕ Data Load**.
+
+![Acessando Data load](./images/data_load.png)
+
+3. Selecione a opção **Data Load**.
+![ver banco de dados disponível](./images/carregar-dados.png)
+
+
+3. Clique em **Select Files** e selecione os arquivos baixados anteriormente.
+![ver banco de dados disponível](./images/select_files.png)
+
+Clique no icone de lápis para editar:
+
+![alt text](./images/rename-table.png)
+
+Altere o nome da tabela para VENDAS:
+
+![alt text](./images/rename-table-1.png)
+
+
+Clique no botão **Close** para finalizar as alterações.
+
+
+4. Clique em **start**.
+![ver banco de dados disponível](./images/start.png)
+
+
+5. Confirme clicando em **Run**.
+![ver banco de dados disponível](./images/run.png)
+
+
+6. Verificar os dados carregados no banco de dados Autonomous. Clique no menu (☰) e selecione **SQL**
+![alt text](./images/sql.png)
+
+Copie o comando SQL e clique no botão de play para executar o comando:
+
+    <copy>
+SELECT * FROM PEDIDOS;
+    </copy>
+<!-- Separador -->
+
+Copie o comando SQL e clique no botão de play para executar o comando:
+
+    <copy>
+SELECT * FROM VENDAS;
+    </copy>
+<!-- Separador -->
+
+![Exibindo os dados](./images/consulta-sql.png)
+
 ## Conclusão
 
-Nesta sessão, você provisionou o Oracle Autonomous AI Database e o Oracle Analytics Cloud, que serão utilizados ao longo do laboratório.
+Nesta sessão, você provisionou o Oracle Autonomous AI Database e o Oracle Analytics Cloud, que serão utilizados ao longo do laboratório. Além disso, fizemos a ingestão dos dados que serão necessários.
 
 ## Autoria
 

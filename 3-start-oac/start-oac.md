@@ -2,10 +2,10 @@
 
 ## Introdução
 
-Neste Lab você vai aprender a navegar pela interface do Oracle Analytics Cloud e, conectar o OAC a dados.
+Neste Lab você vai aprender a navegar pela interface do Oracle Analytics Cloud.
 
 
-***Descripción general***
+***Overview***
 
 O Oracle Analytics Cloud é um serviço de nuvem pública escalável e seguro que fornece um conjunto completo de recursos para explorar e executar análises colaborativas para você, seu grupo de trabalho e sua empresa. Com o Oracle Analytics Cloud, você também tem recursos flexíveis de gerenciamento de serviços, incluindo configuração rápida, dimensionamento e patches fáceis. Como usuário do Oracle Analytics com acesso de Autor de Conteúdo do DV, você poderá estabelecer conexão com as origens de dados usadas por sua organização. Por exemplo, você pode criar um conjunto de dados que inclua tabelas de uma conexão do Autonomous, tabelas de uma conexão Spark e tabelas de uma área de assunto local.
 
@@ -16,7 +16,7 @@ O Oracle Analytics Cloud é um serviço de nuvem pública escalável e seguro qu
 Neste Laboratório você vai:
 
 * Explorar os recursos disponíveis de forma nativa dentro do OAC (Oracle Analytics Cloud)
-* Testar sua conexão.
+
 
 ## Tarefa 1: Acessar a instância do Oracle Analytics Cloud
 
@@ -117,9 +117,7 @@ Seguindo, teremos **Sequences**. Uma sequência é definida como uma coleção d
 
 5. Clicar no Menu no lado superior esquerdo da tela principal e em **Semantic Models** (modelo semântico). Um modelo semântico é um modelo de metadados que contém objetos físicos de banco de dados que são abstraídos e modificados em dimensões lógicas. Um modelo semântico permite estruturar dados de uma forma que seja amigável para os negócios. Ele possibilita adicionar semântica de negócios para dar significado aos dados e às regras de governança que protegem o acesso aos dados.
 
-
 ![modelo semântico](./images/semantica.png)
-
 
 6. Para rastrear o status de seus jobs e gerenciá-los, clicar no menu no lado superior esquerdo da tela principal e em **Jobs** . Você pode monitorar o número de jobs filtrando por Tipo de Objeto e o Status do mesmo.
 

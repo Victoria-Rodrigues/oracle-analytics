@@ -1,20 +1,25 @@
-# Crear un conjunto de datos
+# Criar um Conjunto de Dados
 
-## Introducción
+## Introdução
 
-**Los conjuntos de datos** se pueden crear usando una o más tablas, que pueden ser de la misma conexión o de diferentes conexiones (incluso podemos usar archivos CSV o XLSX). Puede unir todas estas tablas dentro del "Diagrama de unión" (Join).
+Neste Lab você vai aprender a criar um Conjunto de Dados (Dataset) no Oracle Analytics Cloud.
+
+***Overview***
+
+Conjuntos de Dados podem ser criados a partir de uma ou mais tabelas, provenientes da mesma conexão ou de conexões diferentes — incluindo arquivos CSV ou XLSX. É possível combinar todas essas tabelas utilizando o recurso de Diagrama de Junções (Join Diagram).
 
 *Tiempo estimado de laboratorio:* 15 minutos
 
 ### Objetivos
 
-* Seleccione las tablas a utilizar
-* Hacer el Join entre las tablas
-* Guardar el conjunto de datos
+* Selecionar as tabelas que serão utilizadas
+* Fazer o Join entre as tabelas
+* Salvar o Conjunto de Dados
 
-## Tarea 1: Localizar las tablas
+## Tarefa 1: Localize as tabelas
 
-1. Haga clic en el botón **Crear** en la parte superior derecha y luego seleccione **Conjunto de datos**.
+1. Clique no botão **Create** na parte superior direita e em seguida selecione **Dataset**.
+
 
 ![Botón Crear y luego Conexión](./images/select_dataset_labdos.png)
 
