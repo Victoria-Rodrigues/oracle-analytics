@@ -70,7 +70,7 @@ Para realizar a conexão será necessário preencher algumas informações, send
 * Client Credentials: Selecionar o arquivo da wallet do banco que fizemos o download na tarefa 1.
 * Username: ADMIN (Nome do schema)
 * Password: WORKSHOPsec2026## (Senha esquema do banco de dados)
-* Service Name: <nome-do-banco>_high 
+* Service Name: "nome-do-banco"_high 
 
 ![Oracle Autonomous Data Warehouse](./images/oac-connection-2.png)
 
