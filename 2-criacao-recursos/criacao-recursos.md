@@ -116,7 +116,7 @@ Clique em **Create instance**:
 
 ![Capacity](./images/analytics_creation-1.png)
 
-* License: escolha **License included**;=;
+* License: escolha **License included**;
 * Edition: escolha **Enterprise edition**;
 
 ![Licença e Edição](./images/analytics_creation-2.png)
@@ -127,7 +127,9 @@ Clique em **Create instance**:
 
 * Agora finalize a criação clicando no botão **Create**
 
-*Seu Oracle Analytics Cloud foi provisionado com sucesso!*
+![Criando o OAC](image.png)
+
+*Seu Oracle Analytics Cloud está sendo provisionado com sucesso!*
 
 ## Conclusão
 

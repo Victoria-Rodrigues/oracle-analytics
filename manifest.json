@@ -18,17 +18,16 @@
         "filename": "1-config/0-pt-config-lab.md"
         },
         {
-            "title": "Pre-requisitos: Provisionamento de Recursos",
+            "title": "Lab 1: Provisionamento de Recursos",
             "filename": "2-criacao-recursos/criacao-recursos.md"
         },
         {
-            "title": "Ingestão de Dados",
+            "title": "Lab 2: Ingestão de Dados",
             "filename": "3-dataset-database/dataset-database.md"
         },
         {
-            "title": "Lab 1: Primeros pasos en Oracle Analytics Cloud",
-            "description": "Navega por Oracle Analytics Cloud",
-            "filename": "ft-first-steps-es-lab-uno/ft-first-steps-es-lab-uno.md"
+            "title": "Lab 3: Navegando no Oracle Analytics Cloud",
+            "filename": "4-start-oac/start-oac.md"
         },
         {
             "title": "Lab 2: Crear un Conjunto de Datos",
