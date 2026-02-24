@@ -138,43 +138,8 @@ Seguindo, teremos **Sequences**. Uma sequência é definida como uma coleção d
 
 ![Console_Views](./images/console-conf.png)
 
-## Tarea 3: Opciones de identificación
 
-1. Para acceder al Centro de Ayuda, edite su perfil, cambie su contraseña o inicie sesión, verifique la versión actual de OAC o cierre sesión en su cuenta, simplemente haga clic en el círculo con las iniciales de su credencial.
+## Autoria
 
-![ID](./images/id.png)
-
-## Tarea 4: Barra de búsqueda
-
-1. A través de la **Barra de Búsqueda** en tu Página de Inicio, puedes buscar todos los temas aquí presentados y todas las funcionalidades que existen dentro de OAC, desde las opciones dentro del **Menú Hamburguesa** hasta funciones de **Crear **.
-
-![buscar_todo](./images/search_homepage.png)
-
-## Tarea 5: Prueba tu conexión
-Para este Taller, creó una conexión en el laboratorio **Requisitos previos: Aprovisionamiento de los recursos necesarios para el laboratorio**.
-Para asegurarse de que su conexión esté activa y funcionando, visualícela a través de la lista de conexiones.
-Esta lista contiene las conexiones que ha creado y las conexiones a las que puede acceder y usar para crear conjuntos de datos.
-Hay algunas maneras de verificar esto:
-
-1. Desde el Menú Hamburguesa en la página de inicio, haga clic en **Datos** y luego en la pestaña **Conexiones** para acceder a la lista. Si la conexión se realizó correctamente, podrá visualizarla, así como sus detalles.
-
-![Conexión base](./images/conexionadw.png)
-
-Al colocar el mouse sobre la conexión, al final de esta línea, verá tres pequeños puntos a su derecha. Haz clic en él y luego en **Inspeccionar**.
-
-![Inspecciona tu conexión](./images/inspect_conexao.png)
-
-Verá todos los detalles de su conexión.
-
-![Información de conexión](./images/detalles_conexao.png)
-
-¡Listo!
-
-Puede **pasar al siguiente laboratorio**.
-
-
-## Autoría
-
-- **Autores** - Guilherme Galhardo, Thais Henrique, Isabella Alvarez, Breno Comin, Isabelle Dias
-- **Traducción** - Eliana Romero
-- **Última actualización por/fecha** - Eliana Romero, Agosto/2023
+- **Autores** - Victória Rodrigues
+- **Última atualização** - Fevereiro/2026

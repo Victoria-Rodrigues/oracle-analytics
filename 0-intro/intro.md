@@ -29,5 +29,6 @@ Por meio deste guia, forneceremos laboratórios práticos sobre:
 [Documentação do Oracle Analytics Cloud](https://docs.oracle.com/en/cloud/paas/analytics-cloud/index.html).
 
 ## Autoria
+
 - **Autores** - Victória Rodrigues
-- **Última atualização por/data** - Janeiro/2026
+- **Última atualização** - Fevereiro/2026

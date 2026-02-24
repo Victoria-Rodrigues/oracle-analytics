@@ -78,15 +78,17 @@ Clique no botão **Close** para finalizar as alterações.
 
 Execute o comando select:
 
-<copy>
+    <copy>
 SELECT * FROM PEDIDOS;
-</copy>
+    </copy>
+<!-- Separador -->
 
 Execute o comando select:
 
-<copy>
+    <copy>
 SELECT * FROM VENDAS;
-</copy>
+    </copy>
+<!-- Separador -->
 
 ![Exibindo os dados](./images/consulta-sql.png)
 
@@ -97,4 +99,4 @@ Nesta sessão, você aprendemos como fazer a ingestão de dados no Autonomous ut
 ## Autoria
 
 - **Autores** - Victória Rodrigues
-- **Última atualização por/data** - Fevereiro/2026
+- **Última atualização** - Fevereiro/2026

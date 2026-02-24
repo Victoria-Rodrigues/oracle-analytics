@@ -127,8 +127,6 @@ Clique em **Create instance**:
 
 * Agora finalize a criação clicando no botão **Create**
 
-![Criando o OAC](image.png)
-
 *Seu Oracle Analytics Cloud está sendo provisionado com sucesso!*
 
 ## Conclusão
@@ -138,4 +136,4 @@ Nesta sessão, você provisionou o Oracle Autonomous AI Database e o Oracle Anal
 ## Autoria
 
 - **Autores** - Victória Rodrigues
-- **Última atualização por/data** - Fevereiro/2026
+- **Última atualização** - Fevereiro/2026
