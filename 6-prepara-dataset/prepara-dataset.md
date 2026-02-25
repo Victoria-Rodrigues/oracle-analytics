@@ -4,8 +4,6 @@
 
 Após a conexão com o banco e seleção das tabelas, neste lab você vai aprender a preparar seu Conjunto de Dados (Dataset) no Oracle Analytics Cloud, trazendo dados externos, enriquecendo a análise e realizando transformações preliminares à criação dos gráficos e visualizações
 
-
-
 *Tempo estimado para o Lab:* 45 Minutos
 
 ### Objetivos
@@ -72,61 +70,74 @@ Após a conexão com o banco e seleção das tabelas, neste lab você vai aprend
 
 ![Unirse Realizado](./images/join-realized.png)
 
-13. Volte para a aba **Visualize** e valide se a barra horizontal entre os conjuntos de dados desapareceu. Se isso aconteceu, essa tarefa está pronta. Não se esqueça de salvar o seu projeto para não perder o seu progresso.
+13. Volte para a aba **Visualize** e valide se a barra horizontal entre os conjuntos de dados desapareceu. Se isso aconteceu, essa tarefa está pronta. Salve o painel no icone do disquete. Sugestão de nome: **PAINEL WORKSHOP**. Utilize a pasta Projeto para salvar o painel.
 
 ![Cambiar pestaña de vista](./images/tab-visualize.png)
 
-## Tarea 2: Configurar ubicaciones en el conjunto de datos
+![Cambiar pestaña de vista](./images/pasta-projeto.png)
 
-En nuestra segunda tarea, configuraremos las columnas que hacen referencia a ubicaciones geográficas para que traigan información más detallada y puedan ser utilizadas en la construcción de nuestros mapas más adelante.
+## Tarefa 2: Ajustar dados do Dataset para visualização de Mapas
 
-1. Navegue a la pestaña **Datos** y seleccione el botón para **Editar** el archivo de **Clientes**, que acabamos de cargar.
+Em nossa segunda tarefa realizaremos a configuração das colunas que referenciam localizações geográficas para que tragam informações mais detalhadas e possam ser utilizadas na construção dos nossos mapas posteriormente.
+
+
+1. Navegue até a aba **Data** e selecione o botão para **Editar** o dataset **Clientes**, que acabamos de carregar.
+
 
 ![Editar Cliente](./images/data-edit-cliente.png)
 
-2. Todas las columnas están correctamente identificadas como Atributos, por lo que no es necesario ningún cambio al respecto. Seleccione la columna **Ciudad** y observe que en el lado derecho hay una serie de sugerencias para mejorarla. Haga clic en la opción **Enriquecer ciudad con provincia**.
+
+2. Todas as colunas estão corretamente identificadas como **Atributos**, portanto não será necessária qualquer alteração nesse aspecto. Selecione e coluna **Cidade** e note que do lado direito há uma série de sugestões de melhorias para ela. Clique na opção **Enrich Cidade with Province** (Enriquecer Cidade com Province).
+
 
 ![Enriquecer Ciudad](./images/enriquecer-cidade.png)
 
-3. Analytics usará sus bibliotecas internas para traer el estado de cada una de las ciudades indicadas, creando una nueva columna llamada Ciudad_Province.En la columna Ciudad_Provincia, haga clic en los tres puntos y selige la opción **Renombrar...**
+3. O Analytics irá se utilizar de suas bibliotecas internas para trazer o estado de cada uma das cidades indicadas, criando uma nova coluna chamada **Cidade_Province**.
+
 ![Ciudad y Estado](./images/city-province.png)
 
+4. Na coluna **Cidade_Province** clique nos **três pontos** e selecione a opção **Rename...** e
 
+![Ciudad y Estado](./images/clique-rename.png)
 
-5. Nombre esta columna **Estado** y guarde este cambio. También es posible cambiar el nombre de una columna **haciendo doble clic** en su nombre y escribiendo el nuevo nombre deseado para ella.
+5. Dê o nome **Estado** para essa coluna e salve essa alteração. Também é possível renomear uma coluna realizando um duplo-clique no nome dela e escrevendo o novo nome desejado para ela.
+
 ![Cambiar nombre de ciudad](./images/rename-city.png)
 
+6. Selecione mais uma vez a coluna **Cidade** e agora clique nas recomendações **Enrich Cidade with Lat** e **Enrich Cidade with Lon** (Enriquecer Cidade com Lat e Long). Renomeie-as para Latitude e Longitude.
 
-6. Seleccione la columna **Ciudad** una vez más y ahora haga clic en las recomendaciones **Enriquecer ciudad con latitud y longitud**. Cámbieles el nombre a **Latitud y Longitud**.
 ![Renombrar Estado](./images/state-edit.png)
 
+7. Clique no **três pontos** nas novas colunas (Latitude e Longitude) e selecione **Location Details** (Detalhes do Local…)
 
-7. Haga clic en los tres puntos en las nuevas columnas (Latitud y Longitud) y seleccione **Detalles de ubicación...**
 ![Enriquecer con Latitud y Longitud](./images/lat-long.png)
 
+8. Defina o **Location Details** adequado para as colunas de Longitude e Latitude e clique em **OK**
 
-8. Elija el **Tipo de ubicación** adecuado y haga clic en **Aceptar**
-![Detalles de ubicación](./images/ubicación-detalles.png)
+![Detalles de ubicación](./images/local-detalhe.png)
 
+9. Valide se as novas colunas estão identificadas como localizações.
 
-9. Valide que las nuevas columnas estén identificadas como ubicaciones.
 ![Tipo de ubicación](./images/local-type.png)
 
 
-10. Seleccione la columna **Ciudad** una vez más y ahora haga clic en la recomendación **Enriquecer ciudad con población**.
-![Columnas de ubicación](./images/ubicaciones.png)
+10. Selecione mais uma vez a coluna Cidade e agora clique na recomendação **Enrich Cidade with Population** (Enriquecer Cidade com Population).
+
+![Columnas de ubicación](./images/populacao.png)
 
 
-11. Valide que se haya creado la columna **Población de la ciudad**. Si esto sucedió correctamente, la segunda tarea se completó con éxito.
+11. Valide que a coluna População da Cidade foi criada e salve o Dataset no disquete.
+
 ![Enriquecer Ciudad con Población](./images/enriq-cidade.png)
 
-## Tarea 3: Realizar cambios en las columnas
+## Tarefa 3: Realizando alterações nas colunas
 
 Ahora haremos algunos ajustes más que simplificarán la forma en que vamos a interactuar con los datos al crear nuestro tablero.
 
 1. En la pestaña **Datos**, haga clic en el botón para editar los datos de conexión de la base de datos.
 
 ![Cambiar a la pestaña Datos](./images/data-tab-2.png)
+
 
 2. Realizaremos una agrupación utilizando la interfaz de Analytics. Cambie la pestaña inferior a la tabla **VENTAS**, seleccione la columna **EMBALAJE DEL PRODUCTO**, haga clic en los tres puntos y elija la opción **Grupo**.
 
