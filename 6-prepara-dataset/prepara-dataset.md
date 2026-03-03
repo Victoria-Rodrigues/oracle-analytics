@@ -132,16 +132,23 @@ Em nossa segunda tarefa realizaremos a configuração das colunas que referencia
 
 ## Tarefa 3: Realizando alterações nas colunas
 
-Ahora haremos algunos ajustes más que simplificarán la forma en que vamos a interactuar con los datos al crear nuestro tablero.
+Agora realizaremos mais algumas adequações que simplificarão a maneira como vamos interagir com os dados na criação da nossa dashboard.
 
-1. En la pestaña **Datos**, haga clic en el botón para editar los datos de conexión de la base de datos.
+
+1. Na aba **Data**, clique no botão para **editar** os dados da conexão com o banco.
 
 ![Cambiar a la pestaña Datos](./images/data-tab-2.png)
 
 
-2. Realizaremos una agrupación utilizando la interfaz de Analytics. Cambie la pestaña inferior a la tabla **VENTAS**, seleccione la columna **EMBALAJE DEL PRODUCTO**, haga clic en los tres puntos y elija la opción **Grupo**.
+2. Navegue até **PEDIDOS** na aba inferior. No campo **MODO DE ENVIO** podemos notar que está faltando um acento nas modalidades **'Voo Regular'** e **'Voo Expresso'**. Vamos atualizar esses valores. Clique nos três pontos, e logo depois em **Replace...**
 
-![Preparación de datos - Grupo](./images/group.png)
+![Preparación de datos - Grupo](./images/replace_modo_envio.png)
+
+3. Preencha os formulários String para substituir com o valor **Voo** e Nova string com o valor **Vôo**. Isso incluirá o acento nos casos em que o valor Voo apareceu. Clique em **add step** (Adicionar Etapa) para que esse passo da transformação seja de fato realizado. 
+
+![Preparación de datos - Grupo](./images/string_modo_envio.png)
+
+4. Agora realizaremos um agrupamento utilizando a interface do Analytics. Mude a aba inferior para a tabela de **VENDAS**, selecione a coluna **EMBALAGEM_PRODUTO** DO PRODUTO, clique nos três pontos e escolha a opção Agrupar.
 
 6. Crea dos categorías:
    - Empaque Grande: tendrá en su interior los valores Big Box, Jumbo Box y Jumbo Value;
