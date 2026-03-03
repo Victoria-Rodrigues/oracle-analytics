@@ -92,41 +92,37 @@ Em nossa segunda tarefa realizaremos a configuração das colunas que referencia
 
 ![Enriquecer Ciudad](./images/enriquecer-cidade.png)
 
-3. O Analytics irá se utilizar de suas bibliotecas internas para trazer o estado de cada uma das cidades indicadas, criando uma nova coluna chamada **Cidade_Province**.
-
-![Ciudad y Estado](./images/city-province.png)
-
-4. Na coluna **Cidade_Province** clique nos **três pontos** e selecione a opção **Rename...** e
+3. Na coluna **Cidade_Province** clique nos **três pontos** e selecione a opção **Rename...** e
 
 ![Ciudad y Estado](./images/clique-rename.png)
 
-5. Dê o nome **Estado** para essa coluna e salve essa alteração. Também é possível renomear uma coluna realizando um duplo-clique no nome dela e escrevendo o novo nome desejado para ela.
+4. Dê o nome **Estado** para essa coluna e salve essa alteração. Também é possível renomear uma coluna realizando um duplo-clique no nome dela e escrevendo o novo nome desejado para ela.
 
 ![Cambiar nombre de ciudad](./images/rename-city.png)
 
-6. Selecione mais uma vez a coluna **Cidade** e agora clique nas recomendações **Enrich Cidade with Lat** e **Enrich Cidade with Lon** (Enriquecer Cidade com Lat e Long). Renomeie-as para Latitude e Longitude.
+5. Selecione mais uma vez a coluna **Cidade** e agora clique nas recomendações **Enrich Cidade with Lat** e **Enrich Cidade with Lon** (Enriquecer Cidade com Lat e Long). Renomeie-as para Latitude e Longitude.
 
 ![Renombrar Estado](./images/state-edit.png)
 
-7. Clique no **três pontos** nas novas colunas (Latitude e Longitude) e selecione **Location Details** (Detalhes do Local…)
+6. Clique no **três pontos** nas novas colunas (Latitude e Longitude) e selecione **Location Details** (Detalhes do Local…)
 
 ![Enriquecer con Latitud y Longitud](./images/lat-long.png)
 
-8. Defina o **Location Details** adequado para as colunas de Longitude e Latitude e clique em **OK**
+7. Defina o **Location Details** adequado para as colunas de Longitude e Latitude e clique em **OK**
 
 ![Detalles de ubicación](./images/local-detalhe.png)
 
-9. Valide se as novas colunas estão identificadas como localizações.
+8. Valide se as novas colunas estão identificadas como localizações.
 
 ![Tipo de ubicación](./images/local-type.png)
 
 
-10. Selecione mais uma vez a coluna Cidade e agora clique na recomendação **Enrich Cidade with Population** (Enriquecer Cidade com Population).
+9. Selecione mais uma vez a coluna Cidade e agora clique na recomendação **Enrich Cidade with Population** (Enriquecer Cidade com Population).
 
 ![Columnas de ubicación](./images/populacao.png)
 
 
-11. Valide que a coluna População da Cidade foi criada e salve o Dataset no disquete.
+10. Valide que a coluna População da Cidade foi criada e salve o Dataset no disquete.
 
 ![Enriquecer Ciudad con Población](./images/enriq-cidade.png)
 
