@@ -34,9 +34,9 @@
             "filename": "5-dataset-oac/dataset.md"
         },
         {
-            "title": "Lab 3: Preparar un Conjunto de Datos",
+            "title": "Lab 5: Preparar um Conjunto de dados",
             "description": "Enriquezca sus datos a traves de transformaciones en Analytics Cloud",
-            "filename": "ft-prepare-dataset-es-lab-tres/ft-prepare-dataset-es-lab-tres.md"
+            "filename": "6-prepara-dataset/prepara-dataset.md"
         },
         {
             "title": "Lab 4: Crear visualizaciones - Primeros Pasos",

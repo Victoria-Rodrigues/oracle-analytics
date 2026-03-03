@@ -69,7 +69,6 @@ Para verificar o tipo de cada coluna, clique em cima do nome da tabela na aba in
 
 ![Barra verde en la tabla de ventas](./images/ventas_joined_labdos.png)
 
-![alt text](image-1.png)
 
 ## Tarefa 3: Salvar o Conjunto de Dados
 
