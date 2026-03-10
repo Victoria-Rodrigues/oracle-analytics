@@ -58,6 +58,14 @@ Após salvar as alterações, faça o login novamente no Oracle Analytics Cloud.
 
 ![preservar_granularidade_check](./images/preservar_granularidade_check.png)
 
+8. Salve o conjunto de dados no disque na barra superior, confome indicado na imagem:
+
+![salva_dataset](./images/salva_dataset.png)
+
+9. Defina um nome para o conjunto de dados criados, por exemplo, **DS_Workshop** e clique em **OK**. Aguarde o conjunto de dados ser salvo para continuar.
+
+![nome_dataset](./images/nome_dataset.png)
+
 
 ## Tarefa 2: Preparar conjunto de dados
 
@@ -80,17 +88,17 @@ Após salvar as alterações, faça o login novamente no Oracle Analytics Cloud.
 
 ![enriq_lat_log](./images/enriq_lat_log.png)
 
-5. Com as duas novas colunas adicionadas, altere o nome utilizando os três pontinhos na lateral da coluna e selecione **Renomear**. CIDADE_Lon para LONGITUDE e CIDADE_Lat para LATITUDE.
+5. Com as duas novas colunas adicionadas, altere o nome utilizando os três pontinhos na lateral da coluna e selecione **Renomear**. **CIDADE_Lon** para **LONGITUDE** e **CIDADE_Lat** para **LATITUDE**.
 
 ![add_lat_log](./images/add_lat_log.png)
 
 ![tabelas_renomeadas](./images/tabelas_renomeadas.png)
 
-6. Clique no três pontos nas novas colunas (LATITUDE e LONGITUDE) e selecione **Detalhes do Local…**
+6. Clique no três pontinhos das novas colunas (LATITUDE e LONGITUDE) e selecione **Detalhes do Local…**
 
 ![detalhe_lat_log](./images/detalhe_lat_log.png)
 
-7. Defina o Location Details adequado para as colunas de Longitude e Latitude e clique em OK
+7. Defina o Location Details adequado para as colunas de Longitude e Latitude e clique em **OK**.
 
 ![ajuste_lat_log](./images/ajuste_lat_log.png)
 
@@ -99,22 +107,51 @@ Após salvar as alterações, faça o login novamente no Oracle Analytics Cloud.
 ![colunas_localizacao](./images/colunas_localizacao.png)
 
 
-9. Clique novamente na coluna CIDADE e vamos enriquecer os dados com a população, selecione a opção **Enriquecer CIDADE com Population**. Renomei a coluna para POPULACAO ápos a inserção.
+9. Clique novamente na coluna **CIDADE** e vamos enriquecer os dados com a população, selecione a opção **Enriquecer CIDADE com Population**. Renomei a coluna para **POPULACAO**.
 
 ![enriq_populacao](./images/enriq_populacao.png)
 
-10. Resultado final esperado na tabela CLIENTES com adição de quatro novas colunas através do enriquecimento de dados do Analitycs.
+10. Resultado final esperado na tabela **CLIENTES** com adição de quatro novas colunas através do enriquecimento de dados do Analitycs.
 
 ![enriq_dados_clientes](./images/enriq_dados_clientes.png)
 
+11. Salve o conjunto de dados no disque na barra superior.
 
-11. Salve o conjunto de dados no disque na barra superior, confome indicado na imagem:
 
-![salva_dataset](./images/salva_dataset.png)
+## Tarefa 3: Preparar conjunto de dados
 
-Defina um nome para o conjunto de dados criados, por exemplo, **DS_Workshop** e clique em **OK**. Aguarde o conjunto de dados ser salvo para continuar.
+1. Agora criaremos um campo que será originado a partir de uma regra escrita na camada de preparação do OAC. Na aba de **VENDAS**, selecione a coluna **LUCRO**, clique nos três pontos e selecione **Criar**. Isso fará com que criemos uma nova coluna a partir da coluna Lucro.
 
-![nome_dataset](./images/nome_dataset.png)
+![criar_coluna_prejuizo](image-1.png)
+
+2. Nomeie a nova coluna como **LUCRO/PREJUIZO** e escreva o código abaixo:
+
+        <copy>
+CASE WHEN LUCRO >= 0 THEN 'Lucro' ELSE 'Prejuízo' END
+    </copy>
+<!-- Separador -->
+
+3. Não se esqueça de mapear a coluna **Lucro** (apenas o texto não irá se referenciar a ela). Clique em **Adicionar Etapa** para salvar esse passo. Reproduza o processo no GIF abaixo para garantir que o processo será um sucesso.
+
+![enriq_dados_clientes](./images/criar_coluna_calculo.gif)
+
+4. Seleciona a coluna **VALOR**, clique na área inferior esquerda no # e dentro do Formato do Número, selecione Moeda.
+
+![moeda](image-2.png)
+
+5. Escolha a opção que representa o real **(BRL/R$)**.
+
+![alt text](image-3.png)
+
+6. Realize o mesmo processo para as colunas **LUCRO**, **DESCONTO** e **PRECO_BRUTO**.
+
+![alt text](image-4.png)
+
+7. Selecione a coluna DESCONTO e desça até a Agregação. Selecione Média. Agora a agregação dessa coluna foi alterada.
+
+![alt text](image-5.png)
+
+8. Salve mais uma vez o projeto para não perder seu progresso.
 
 ## Conclusão
 
