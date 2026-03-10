@@ -155,7 +155,8 @@ Clique em cima do nome do banco de dados definido anteriormente:
 
 6. Para verificar se os dados foram criados, execute os seguintes comandos e clique no botão de play para executar o comando:
 
-    <copy>
+
+        <copy>
 SELECT * FROM PEDIDOS;
     </copy>
 <!-- Separador -->

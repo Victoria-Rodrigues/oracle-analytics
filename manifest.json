@@ -14,24 +14,20 @@
         
         },
         {
-        "title": "Ativação da Conta Oracle Cloud",
+        "title": "Lab 1: Ativação da Conta Oracle Cloud",
         "filename": "1-config/0-pt-config-lab.md"
         },
         {
-            "title": "Lab 1: Provisionamento de Recursos",
+            "title": "Lab 2: Provisionamento de Recursos",
             "filename": "2-criacao-recursos/criacao-recursos.md"
         },
         {
-            "title": "Lab 2: Navegando no Oracle Analytics Cloud",
-            "filename": "3-start-oac/start-oac.md"
-        },
-        {
             "title": "Lab 3: Conexão ao Oracle Analytics Cloud",
-            "filename": "4-conexao-oac/conexao-oac.md"
+            "filename": "3-conexao-oac/conexao-oac.md"
         },
         {
-            "title": "Lab 4: Criar um Conjunto de dados",
-            "filename": "5-dataset-oac/dataset.md"
+            "title": "Lab 4: Criar Conjunto de dados",
+            "filename": "4-dataset-oac/dataset.md"
         },
         {
             "title": "Lab 5: Preparar um Conjunto de dados",
