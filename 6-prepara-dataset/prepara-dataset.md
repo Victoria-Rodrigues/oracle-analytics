@@ -146,33 +146,50 @@ Agora realizaremos mais algumas adequações que simplificarão a maneira como v
 
 4. Agora realizaremos um agrupamento utilizando a interface do Analytics. Mude a aba inferior para a tabela de **VENDAS**, selecione a coluna **EMBALAGEM_PRODUTO** DO PRODUTO, clique nos três pontos e escolha a opção Agrupar.
 
-6. Crea dos categorías:
-   - Empaque Grande: tendrá en su interior los valores Big Box, Jumbo Box y Jumbo Value;
-   - Empaque Pequeño: contendrá los valores Caja Mediana, Caja Pequeña, Paquete Pequeño y Bolsa Empaque.
-   Después de crear los grupos, asegúrese de nombrar **Tipos de empaque** para la nueva columna que se creará y haga clic en **Agregar paso**.
+![alt text](image.png)
+
+6. Crie duas categorias:
+
+- **Embalagens Grandes**: terá dentro de si os valores Caixa Grande, Caixa Jumbo e Valor Jumbo;
+- **Embalagens Pequenas**: terá dentro de si os valores Caixa Média, Caixa Pequena, Pacote Pequeno e Saco de Embrulho. Após criados os grupos, certifique-se que você deu o nome Tipos de Embalagem para a nova coluna que será criada e clique em Adicionar Etapa.
 
 ![Tipos de Empaques](./images/tipos-embalagem.png)
 
-7. Para el próximo cambio, crearemos un campo que se originará a partir de una regla escrita en la capa de preparación del OAC. Todavía en la pestaña VENTAS, seleccione la columna GANANCIAS, haga clic en los tres puntos y seleccione **Crear**. Esto hará que creemos una nueva columna a partir de la columna Beneficio.
+7. Para a próxima alteração criaremos um campo que será originado a partir de uma regra escrita na camada de preparação do OAC. Ainda na aba VENDAS, selecione a coluna LUCRO, clique nos três pontos e selecione **Criar**. Isso fará com que criemos uma nova coluna a partir da coluna Lucro.
 
 ![Crear Columna de Utilidad](./images/criar-coluna-lucro.png)
 
-8. Nombre la nueva columna **Ganancias/Pérdidas** y escriba el código a continuación:
+8. Nomeie a nova coluna como Lucro/Prejuízo e escreva o código abaixo:
+
 ```
-CASO CUANDO GANANCIA >= 0 ENTONCES 'Ganancia' DE LO CONTRARIO 'Pérdida' FIN
+CASE WHEN LUCRO >= 0 THEN 'Lucro' ELSE 'Prejuízo' END
 ```
-No olvide asignar la columna Beneficio (solo el texto no se referirá a ella).
-Haga clic en **Agregar paso** para guardar este paso. Reproduzca el proceso en el GIF a continuación para asegurarse de que el proceso sea un éxito.
+Não se esqueça de mapear a coluna Lucro (apenas o texto não irá se referenciar a ela). Clique em Adicionar Etapa para salvar esse passo. Reproduza o processo no GIF abaixo para garantir que o processo será um sucesso.
+
+
 
 ![Creando cálculo OAC](./images/assign.png)
 
 
-¡Felicitaciones, ha terminado este laboratorio!
-Puede **pasar al siguiente laboratorio**.
+Nossas colunas já estão com a classificação correta (Atributo/Métrica), mas as métricas podem ter diferentes formas de agregação (Soma, Média, Contagem…). Também é possível criar uma formatação para indicar que uma coluna é um valor de moeda em reais (R$), por exemplo.
+
+9. Seleciona a coluna VENDAS, clique na área inferior esquerda no # e dentro do Formato do Número, selecione Moeda.
+
+10. Escolha a opção que representa o real (BRL/R$).
+
+11. Realize o mesmo processo para as colunas LUCRO, DESCONTO e PREÇO BRUTO.
+
+12. Selecione a coluna DESCONTO e desça até a Agregação. Selecione Média. Agora a agregação dessa coluna foi alterada.
+
+13. Salve mais uma vez o projeto para não perder seu progresso.
+
+Parabéns, você terminou esse laboratório! Você pode seguir para o próximo Lab.
+
 
 ## Conclusión
 
-En esta sesión aprendiste a preparar un Dataset en Oracle Analytics Cloud, realizando una serie de transformaciones de datos y complementándolas con información externa disponible en un archivo excel.
+Nesta sessão você aprendeu a preparar um Conjunto de Dados no Oracle Analytics Cloud, realizando uma série de transformações nos dados e complementando-os com informações externas disponíveis em um arquivo excel.
+
 
 ## Autoría
 

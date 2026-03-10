@@ -132,11 +132,9 @@ Clique em **Create instance**:
 
 ## Tarefa 4: Carregando os dados do laboratório no Autonomous
 
-1. Para o desenvolvimento do laboratório é necessário baixar os 2 arquivos.
+1. Para o desenvolvimento do laboratório é necessário baixar esse script para criação das tabelas e dados de exemplo.
 
-* (Pedidos [Download-Pedidos](https://objectstorage.us-ashburn-1.oraclecloud.com/p/U8tA6PQvsaL8jSlP9NlWMnkzWsQ29-bs8q6rEjwo0cY_-7w0nd9DOqWf94fsok4g/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Pedidos.xlsx))
-
-* (Vendas [Download-Vendas](https://objectstorage.us-ashburn-1.oraclecloud.com/p/n_Jkw7RfTdkvE45pVR9bS2FT2_spcZnmZwOZWE0gIa2VgBvjHjM22k1YIlfpnRTZ/n/idy4hyfbs31o/b/Bucket-Fast-Track/o/Ventas.xlsx))
+[Baixar Script](./script/script-dados.sql)
 
 1. Acesse o banco de dados, clique no menu (☰) e selecione **Oracle AI Database ⮕ Autonomous AI Database**
 
@@ -146,55 +144,37 @@ Clique em cima do nome do banco de dados definido anteriormente:
 
 ![Acessando database](./images/acess-database.png)
 
-2. Clique no botão **Database actions ⮕ Data Load**.
+2. Clique no botão **Database actions ⮕ SQL**.
 
-![Acessando Data load](./images/data_load.png)
+![console-sql-adb](./images/console-sql-adb.png)
 
-3. Selecione a opção **Data Load**.
-![ver banco de dados disponível](./images/carregar-dados.png)
+3. Copie e cole o script sql baixado anteriormente. Selecione todo o script (ctrl + a) e clique em **Run as SQL script**, conforme ilustrado na imagem.
 
-
-3. Clique em **Select Files** e selecione os arquivos baixados anteriormente.
-![ver banco de dados disponível](./images/select_files.png)
-
-Clique no icone de lápis para editar:
-
-![alt text](./images/rename-table.png)
-
-Altere o nome da tabela para VENDAS:
-
-![alt text](./images/rename-table-1.png)
+![script_dados](./images/script_dados.png)
 
 
-Clique no botão **Close** para finalizar as alterações.
-
-
-4. Clique em **start**.
-![ver banco de dados disponível](./images/start.png)
-
-
-5. Confirme clicando em **Run**.
-![ver banco de dados disponível](./images/run.png)
-
-
-6. Verificar os dados carregados no banco de dados Autonomous. Clique no menu (☰) e selecione **SQL**
-![alt text](./images/sql.png)
-
-Copie o comando SQL e clique no botão de play para executar o comando:
+6. Para verificar se os dados foram criados, execute os seguintes comandos e clique no botão de play para executar o comando:
 
     <copy>
 SELECT * FROM PEDIDOS;
     </copy>
 <!-- Separador -->
 
-Copie o comando SQL e clique no botão de play para executar o comando:
+![select_pedidos](./images/select_pedidos.png)
+
+Repita esse mesmo processo para as tabelas de **VENDAS** e **CLIENTES**:
 
     <copy>
 SELECT * FROM VENDAS;
     </copy>
 <!-- Separador -->
 
-![Exibindo os dados](./images/consulta-sql.png)
+    <copy>
+SELECT * FROM CLIENTES;
+    </copy>
+<!-- Separador -->
+
+*Seus dados de exemplos já estão prontos com sucesso!*
 
 ## Conclusão
 
